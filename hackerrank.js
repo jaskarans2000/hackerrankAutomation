@@ -87,9 +87,9 @@ puppeteer.launch({
     page=pages[0];
     return page.goto("https://www.hackerrank.com/auth/login?h_l=body_middle_left_button&h_r=login");
 }).then(function(){
-    return page.type("[id=input-1]","miyenar449");
+    return page.type("[id=input-1]","username");
 }).then(function(){
-    return page.type("[id=input-2]","123456789");
+    return page.type("[id=input-2]","password");
 }).then(function(){
     return click(".ui-btn.ui-btn-large.ui-btn-primary.auth-button.ui-btn-styled")
  }).then(function(){
